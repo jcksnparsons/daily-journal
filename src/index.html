@@ -11,33 +11,30 @@
     <h1>Daily Journal</h1>
     <form action="">
         <fieldset>
-            <label for="journalDate">What day is it, bud?</label>
+            <label for="journalDate"><h3>What day is it, bud?</h3></label>
             <input type="date" name="journalDate" id="journalDate">
         </fieldset>
     </form>
     <form action="">
         <fieldset>
-            <label for="conceptsCovered">What did ya learn today, bud?</label>
+            <label for="conceptsCovered"><h3>What did ya learn today, bud?</h3></label>
             <input name="conceptsCovered" id="conceptsCovered">
         </fieldset>
     </form>
     <form action="">
         <fieldset>
-            <label for="journalEntry">What's on your mind, bud?</label>
+            <label for="journalEntry"><h3>What's on your mind, bud?</h3></label>
             <textarea name="journalEntry" id="journalEntry" rows="8"></textarea>
         </fieldset>
     </form>
     <form action="">
         <fieldset>
-            <label for="moodForDay">How ya feeling, bud?</label>
-            <select id="moodForDay">
-                <option value=" ">--Seriously, bud--</option>
-                <option value="prettyGood">Well, pretty good!</option>
-                <option value="notSoBad">Oh, not so bad. Yourself?</option>
-                <option value="bitFlustered">I'm a bit flustered, to be honest.</option>
-                <option value="prettyDown">Truth be told, I'm pretty down.</option>
-                <option value="noneYa">I don't believe that's any of your business!</option>
-            </select>
+            <label for="moodForDay"><h3>How ya feeling, bud?</h3></label>
+                <input type="radio" name="mood" value="prettyGood">Well, pretty good!<br>
+                <input type="radio" name="mood" value="notSoBad">Oh, not so bad. Yourself?<br>
+                <input type="radio" name="mood" value="flustered">I'm a bit flustered, to be honest.</option>
+                <input type="radio" name="mood" value="prettyDown">Truth be told, I'm pretty down.</option>
+                <input type="radio" name="mood" value="noneYa">I don't believe that's any of your business!</option>
         </fieldset>
     </form>
     <button type="button">Thanks for sharing, bud.</button>

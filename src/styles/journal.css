@@ -1,9 +1,48 @@
 form {
     display: flex;
     flex-direction: column;
-    /* width: 25%; */
 }
 
 h1 {
     text-align: center;
+    color: silver;
 }
+
+h3 {
+    color: silver;
+}
+
+fieldset {
+    display: flex;
+    border: 1px solid #FF6700;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+body {
+    background-color: #004E98;
+}
+
+.moodForDay {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#conceptsCovered {
+    color: #EBEBEB;
+}
+
+#journalDate {
+    background-color: #EBEBEB;
+}
+
+#journalEntry {
+    background-color: #EBEBEB;
+    width: 80%;
+}
+
+button {
+    color: #EBEBEB;
+    background-color: cornflowerblue;
+}
+
