@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/journal.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Daily Journal</h1>
+    <form action="">
+        <fieldset>
+            <label for="journalDate">What day is it, bud?</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <label for="conceptsCovered">What did ya learn today, bud?</label>
+            <input name="conceptsCovered" id="conceptsCovered">
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <label for="journalEntry">What's on your mind, bud?</label>
+            <textarea name="journalEntry" id="journalEntry" rows="8"></textarea>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <label for="moodForDay">How ya feeling, bud?</label>
+            <select id="moodForDay">
+                <option value=" ">--Seriously, bud--</option>
+                <option value="prettyGood">Well, pretty good!</option>
+                <option value="notSoBad">Oh, not so bad. Yourself?</option>
+                <option value="bitFlustered">I'm a bit flustered, to be honest.</option>
+                <option value="prettyDown">Truth be told, I'm pretty down.</option>
+                <option value="noneYa">I don't believe that's any of your business!</option>
+            </select>
+        </fieldset>
+    </form>
+    <button type="button">Thanks for sharing, bud.</button>
+</body>
