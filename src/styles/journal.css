@@ -36,7 +36,7 @@ body {
     background-color: #EBEBEB;
 }
 
-#journalEntry {
+#journalContent {
     background-color: #EBEBEB;
     width: 80%;
 }
@@ -46,3 +46,33 @@ button {
     background-color: cornflowerblue;
 }
 
+.journalEntry {
+    background-color: #EBEBEB;
+    margin: 5%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.journalEntry h3 {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.journalEntry h2 {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.journalEntry p {
+    display: flex;
+    justify-content: center;
+}
+
+.journalEntry #conceptsCovered {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
