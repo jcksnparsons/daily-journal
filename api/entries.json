@@ -1,0 +1,32 @@
+{
+    "entries": [
+        {
+            "id": 1,
+            "journalDate": "2020-01-17",
+            "conceptsCovered": "Functions in Javascript",
+            "journalContent": "My brain feels like a large bowl of mashed potatoes.",
+            "moodForDay": "flustered"
+        },
+        {
+            "id": 2,
+            "journalDate": "2020-01-16",
+            "conceptsCovered": "Objects in javascript",
+            "journalContent": "Actually not too bad. Objects seem a lot less scary after today.",
+            "moodForDay": "notSoBad"
+        },
+        {
+            "id": 3,
+            "journalDate": "2020-01-15",
+            "conceptsCovered": "jQuery and manipulating the DOM",
+            "journalContent": "Wow, the DOM now seems way less terrifying. Glad I'm starting to pick things up!",
+            "moodForDay": "prettyGood"
+        },
+        {
+            "id": 4,
+            "journalDate": "2020-01-20",
+            "conceptsCovered": "mainpulating HTML with javascript functions",
+            "journalContent": "Today was a solid 50/50. I felt pretty good about …nts. At least I'm not the only one at that point.",
+            "moodForDay": "notSoBad"
+        }
+    ]
+}
