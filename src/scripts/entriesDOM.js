@@ -1,3 +1,5 @@
+import makeJournalEntry from './entryComponent.js'
+
 const putJournalOnDOM = (entries) => {
     const entryLog = document.getElementById("entryLog")
     entries.forEach(entry => {
@@ -5,4 +7,4 @@ const putJournalOnDOM = (entries) => {
     })
 }
 
-    
+export default putJournalOnDOM

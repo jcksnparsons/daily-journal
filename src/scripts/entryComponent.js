@@ -7,3 +7,5 @@ const makeJournalEntry = (journalEntry) => {
     </div>
     `
 }
+
+export default makeJournalEntry
