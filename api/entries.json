@@ -27,6 +27,13 @@
             "conceptsCovered": "mainpulating HTML with javascript functions",
             "journalContent": "Today was a solid 50/50. I felt pretty good about …nts. At least I'm not the only one at that point.",
             "moodForDay": "notSoBad"
+        },
+        {
+            "id": 5,
+            "journalDate": "2020-01-31",
+            "conceptsCovered": "factory functions and javascript modularity",
+            "journalContent": "Feeling pretty great today! Once I was able to actually get in and work on modularity, I began to feel a lot more confident with it. And I've been messing around with factory functions on my own, so it's nice to be able to really implement that.",
+            "moodForDay": "prettyGood"
         }
     ]
 }
