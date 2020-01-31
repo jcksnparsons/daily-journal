@@ -1,39 +1,53 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "journalDate": "2020-01-17",
-            "conceptsCovered": "Functions in Javascript",
-            "journalContent": "My brain feels like a large bowl of mashed potatoes.",
-            "moodForDay": "flustered"
-        },
-        {
-            "id": 2,
-            "journalDate": "2020-01-16",
-            "conceptsCovered": "Objects in javascript",
-            "journalContent": "Actually not too bad. Objects seem a lot less scary after today.",
-            "moodForDay": "notSoBad"
-        },
-        {
-            "id": 3,
-            "journalDate": "2020-01-15",
-            "conceptsCovered": "jQuery and manipulating the DOM",
-            "journalContent": "Wow, the DOM now seems way less terrifying. Glad I'm starting to pick things up!",
-            "moodForDay": "prettyGood"
-        },
-        {
-            "id": 4,
-            "journalDate": "2020-01-20",
-            "conceptsCovered": "mainpulating HTML with javascript functions",
-            "journalContent": "Today was a solid 50/50. I felt pretty good about …nts. At least I'm not the only one at that point.",
-            "moodForDay": "notSoBad"
-        },
-        {
-            "id": 5,
-            "journalDate": "2020-01-31",
-            "conceptsCovered": "factory functions and javascript modularity",
-            "journalContent": "Feeling pretty great today! Once I was able to actually get in and work on modularity, I began to feel a lot more confident with it. And I've been messing around with factory functions on my own, so it's nice to be able to really implement that.",
-            "moodForDay": "prettyGood"
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "journalDate": "2020-01-17",
+      "conceptsCovered": "Functions in Javascript",
+      "journalContent": "My brain feels like a large bowl of mashed potatoes.",
+      "moodForDay": "flustered"
+    },
+    {
+      "id": 2,
+      "journalDate": "2020-01-16",
+      "conceptsCovered": "Objects in javascript",
+      "journalContent": "Actually not too bad. Objects seem a lot less scary after today.",
+      "moodForDay": "notSoBad"
+    },
+    {
+      "id": 3,
+      "journalDate": "2020-01-15",
+      "conceptsCovered": "jQuery and manipulating the DOM",
+      "journalContent": "Wow, the DOM now seems way less terrifying. Glad I'm starting to pick things up!",
+      "moodForDay": "prettyGood"
+    },
+    {
+      "id": 4,
+      "journalDate": "2020-01-20",
+      "conceptsCovered": "mainpulating HTML with javascript functions",
+      "journalContent": "Today was a solid 50/50. I felt pretty good about …nts. At least I'm not the only one at that point.",
+      "moodForDay": "notSoBad"
+    },
+    {
+      "id": 5,
+      "journalDate": "2020-01-31",
+      "conceptsCovered": "factory functions and javascript modularity",
+      "journalContent": "Feeling pretty great today! Once I was able to actually get in and work on modularity, I began to feel a lot more confident with it. And I've been messing around with factory functions on my own, so it's nice to be able to really implement that.",
+      "moodForDay": "prettyGood"
+    },
+    {
+      "journalDate": "2020-01-31",
+      "conceptsCovered": "API fetch and post",
+      "journalContent": "Ok, I don't totally know exactly how I did it or how any of this actually works, but this thing actually functions the way it's supposed to. I'm tired and confused, but a working product is a working product, so I'm not going to complain.",
+      "moodForDay": "notSoBad",
+      "id": 6
+    },
+    {
+      "journalDate": "2020-01-31",
+      "conceptsCovered": "Dunno",
+      "journalContent": "Proof of concept",
+      "moodForDay": "noneYa",
+      "id": 7
+    }
+  ]
 }
