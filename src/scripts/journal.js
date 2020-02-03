@@ -34,7 +34,7 @@ recordEntryButton.addEventListener('click', event => {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(newJournalEntry)
-    })
+    }).then(API.getJournalEntries().then(putJournalOnDOM))
 })
 
 

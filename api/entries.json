@@ -48,6 +48,20 @@
       "journalContent": "Proof of concept",
       "moodForDay": "noneYa",
       "id": 7
+    },
+    {
+      "journalDate": "2020-02-03",
+      "conceptsCovered": "Array Methods",
+      "journalContent": "This may be the excess of coffee talking, but I feel like I actually understand array methods fairly well. Sort is a bit tricky, but I think I can get it before too long!",
+      "moodForDay": "prettyGood",
+      "id": 8
+    },
+    {
+      "journalDate": "2020-02-03",
+      "conceptsCovered": "More fetch call tomfoolery",
+      "journalContent": "I think I'm actually starting to understand this stuff. Or maybe I'm crazy. Who knows?",
+      "moodForDay": "notSoBad",
+      "id": 9
     }
   ]
 }
