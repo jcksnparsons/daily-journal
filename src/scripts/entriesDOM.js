@@ -2,6 +2,7 @@ import makeJournalEntry from './entryComponent.js'
 
 const putJournalOnDOM = (entries) => {
     const entryLog = document.getElementById("entryLog")
+    entryLog.innerHTML = ""
     entries.forEach(entry => {
         entryLog.innerHTML += makeJournalEntry(entry)
     })

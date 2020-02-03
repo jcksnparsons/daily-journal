@@ -28,8 +28,9 @@ body {
     flex-wrap: wrap;
 }
 
-#conceptsCovered {
-    color: #EBEBEB;
+#conceptsCoveredBox {
+    background-color: #EBEBEB;
+    
 }
 
 #journalDate {
