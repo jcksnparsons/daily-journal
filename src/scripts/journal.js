@@ -28,7 +28,7 @@ const journalEntryMaker = (date, concepts, content, mood) => {
 
 recordEntryButton.addEventListener('click', event => {
     const newJournalEntry = journalEntryMaker(journalDate.value, conceptsCovered.value, journalContent.value, moodChecker(moodForDay))
-    fetch("http://localhost:3000/entries", {
+    return fetch("http://localhost:3000/entries", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
