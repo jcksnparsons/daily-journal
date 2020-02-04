@@ -29,13 +29,7 @@ const journalEntryMaker = (date, concepts, content, mood) => {
 
 recordEntryButton.addEventListener('click', event => {
     const newJournalEntry = journalEntryMaker(journalDate.value, conceptsCovered.value, journalContent.value, moodChecker(moodForDay))
-    return fetch("http://localhost:3000/entries", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(newJournalEntry)
-    })
+    API.postNewEntry(newJournalEntry)
         .then(() => {
             API.getJournalEntries()
                 .then(putJournalOnDOM);
@@ -47,7 +41,6 @@ const filterMoodButtons = document.getElementsByName("filterMood")
 filterMoodButtons.forEach(filterMoodButton =>
     filterMoodButton.addEventListener("click", event => {
         const mood = event.target.value
-        console.log(`You clicked the ${mood} button`)
         API.getJournalEntries().then(arr => {
             putJournalOnDOM(arr.filter((el => el.moodForDay === mood)))
         })

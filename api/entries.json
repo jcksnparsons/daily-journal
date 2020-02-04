@@ -58,9 +58,9 @@
     },
     {
       "journalDate": "2020-02-04",
-      "conceptsCovered": "More filter method practice",
-      "journalContent": "Where is my mind",
-      "moodForDay": "flustered",
+      "conceptsCovered": "Filtering methods, started on Delete",
+      "journalContent": "Well, that was definitely a day. I had a few moments of despair, but I feel a lot more confident with filtering and am getting a better idea of the \"signal flow\" of functions. Also, it's been fun getting into the Web Audio API. It's nice to know that, at some point, I might actually be able to do music and code simultaneously.",
+      "moodForDay": "notSoBad",
       "id": 10
     }
   ]
