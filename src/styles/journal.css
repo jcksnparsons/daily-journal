@@ -82,3 +82,8 @@ button {
     display: flex;
     flex-direction: column-reverse;
 }
+
+.radioButton {
+    display: flex;
+    
+}

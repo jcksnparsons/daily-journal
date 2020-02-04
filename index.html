@@ -30,11 +30,41 @@
     <form action="">
         <fieldset>
             <label for="moodForDay"><h3>How ya feeling, bud?</h3></label>
+            <div>
                 <input type="radio" name="mood" value="prettyGood">Well, pretty good!<br>
+            </div>
+            <div>
                 <input type="radio" name="mood" value="notSoBad">Oh, not so bad. Yourself?<br>
+            </div>
+            <div>
                 <input type="radio" name="mood" value="flustered">I'm a bit flustered, to be honest.</option>
+            </div>
+            <div>
                 <input type="radio" name="mood" value="prettyDown">Truth be told, I'm pretty down.</option>
+            </div>
+            <div>
                 <input type="radio" name="mood" value="noneYa">I don't believe that's any of your business!</option>
+            </div>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend><h3>Filter by Mood</h3></legend>
+            <div>
+            <input type="radio" name="filterMood" value="prettyGood">These were some good days!
+            </div>
+            <div>
+            <input type="radio" name="filterMood" value="notSoBad">These days weren't too bad.
+            </div>
+            <div>
+            <input type="radio" name="filterMood" value="flustered">I was feeling pretty flustered here.
+            </div>
+            <div>
+            <input type="radio" name="filterMood" value="prettyDown">I was pretty down here.
+            </div>
+            <div>
+            <input type="radio" name="filterMood" value="noneYa">It wasn't your business then and it isn't your business now!
+            </div>
         </fieldset>
     </form>
     <button type="button" id="recordEntryButton">Thanks for sharing, bud.</button>
