@@ -55,6 +55,13 @@
       "journalContent": "I think I'm actually starting to understand this stuff. Or maybe I'm crazy. Who knows?",
       "moodForDay": "notSoBad",
       "id": 9
+    },
+    {
+      "journalDate": "2020-02-04",
+      "conceptsCovered": "More filter method practice",
+      "journalContent": "Where is my mind",
+      "moodForDay": "flustered",
+      "id": 10
     }
   ]
 }

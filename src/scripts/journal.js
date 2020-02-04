@@ -1,9 +1,8 @@
 import API from './data.js'
 import putJournalOnDOM from './entriesDOM.js'
 
-const buildJournal = () => API.getJournalEntries().then(putJournalOnDOM)
-
-buildJournal()
+API.getJournalEntries()
+    .then(putJournalOnDOM)
 
 const recordEntryButton = document.querySelector("#recordEntryButton")
 const journalDate = document.querySelector("#journalDate")
@@ -36,9 +35,21 @@ recordEntryButton.addEventListener('click', event => {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(newJournalEntry)
-    }).then(() => {
-        buildJournal();
     })
+        .then(() => {
+            API.getJournalEntries()
+                .then(putJournalOnDOM);
+        })
 })
 
+const filterMoodButtons = document.getElementsByName("filterMood")
 
+filterMoodButtons.forEach(filterMoodButton =>
+    filterMoodButton.addEventListener("click", event => {
+        const mood = event.target.value
+        console.log(`You clicked the ${mood} button`)
+        API.getJournalEntries().then(arr => {
+            putJournalOnDOM(arr.filter((el => el.moodForDay === mood)))
+        })
+    })
+)
