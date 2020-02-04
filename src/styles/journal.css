@@ -77,3 +77,8 @@ button {
     display: flex;
     justify-content: center;
 }
+
+#entryLog {
+    display: flex;
+    flex-direction: column-reverse;
+}
