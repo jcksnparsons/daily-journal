@@ -1,7 +1,9 @@
 import API from './data.js'
 import putJournalOnDOM from './entriesDOM.js'
 
-API.getJournalEntries().then(putJournalOnDOM)
+const buildJournal = () => API.getJournalEntries().then(putJournalOnDOM)
+
+buildJournal()
 
 const recordEntryButton = document.querySelector("#recordEntryButton")
 const journalDate = document.querySelector("#journalDate")
@@ -34,7 +36,9 @@ recordEntryButton.addEventListener('click', event => {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(newJournalEntry)
-    }).then(API.getJournalEntries().then(putJournalOnDOM))
+    }).then(() => {
+        buildJournal();
+    })
 })
 
 
