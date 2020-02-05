@@ -6,6 +6,13 @@
       "journalContent": "Well, I managed to refactor my code for the journal so my main.js now consists of about 10 lines of code. To quote Ice Cube, \"today was a good day.\" I'm almost bummed that we have lab work the rest of the day, because I'm excited to learn new stuff!",
       "moodForDay": "prettyGood",
       "id": 1
+    },
+    {
+      "journalDate": "2020-02-05",
+      "conceptsCovered": "Just doing some testing",
+      "journalContent": "Don't mind me, just trying out some code",
+      "moodForDay": "notSoBad",
+      "id": 2
     }
   ]
 }

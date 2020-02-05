@@ -2,10 +2,7 @@ import API from './data.js'
 import journalRenderFunctions from './entryComponent.js'
 import putJournalOnDOM from './entriesDOM.js'
 
-
-
 const events = {
-
     recordEntry() {
         const recordEntryButton = document.querySelector("#recordEntryButton")
         const journalDate = document.querySelector("#journalDate")
@@ -30,7 +27,6 @@ const events = {
                 })
         })
     },
-
     filterByMood() {
         const filterMoodButtons = document.getElementsByName("filterMood")
         filterMoodButtons.forEach(filterMoodButton =>
@@ -42,7 +38,6 @@ const events = {
             })
         )
     },
-
     deleteEntry() {
         const journalRecord = document.getElementById("entryLog")
         journalRecord.addEventListener("click", event => {
@@ -51,7 +46,6 @@ const events = {
                 const deleteButtonArray = deleteButtonId.split("--");
                 const entryToDelete = deleteButtonArray[1];
                 
-
                 API.deleteEntry(entryToDelete)
                     .then(API.getJournalEntries)
                     .then(putJournalOnDOM)
