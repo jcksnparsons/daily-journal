@@ -1,3 +1,7 @@
+html {
+    width: 75%;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -90,6 +94,12 @@ button {
     display: flex;
 }
 
-#entryDelete {
-    width: 40%;
+.buttonDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.journalButton {
+    width: 30%;
 }
