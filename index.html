@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,39 @@
     <link rel="stylesheet" type="text/css" href="src/styles/journal.css" />
     <title>J. Parsons Daily Journal</title>
 </head>
+
 <body>
     <h1>My Daily Journal</h1>
     <form action="">
+        <input type="hidden" id="journalId" value="" />
         <fieldset>
-            <label for="journalDate"><h3>What day is it, bud?</h3></label>
+            <label for="journalDate">
+                <h3>What day is it, bud?</h3>
+            </label>
             <input type="date" name="journalDate" id="journalDate">
         </fieldset>
     </form>
     <form action="">
         <fieldset>
-            <label for="conceptsCovered"><h3>What did ya learn today, bud?</h3></label>
+            <label for="conceptsCovered">
+                <h3>What did ya learn today, bud?</h3>
+            </label>
             <input name="conceptsCovered" id="conceptsCoveredBox">
         </fieldset>
     </form>
     <form action="">
         <fieldset>
-            <label for="journalContent"><h3>What's on your mind, bud?</h3></label>
+            <label for="journalContent">
+                <h3>What's on your mind, bud?</h3>
+            </label>
             <textarea name="journalContent" id="journalContent" rows="8"></textarea>
         </fieldset>
     </form>
     <form action="">
         <fieldset>
-            <label for="moodForDay"><h3>How ya feeling, bud?</h3></label>
+            <label for="moodForDay">
+                <h3>How ya feeling, bud?</h3>
+            </label>
             <div>
                 <input type="radio" name="mood" value="prettyGood">Well, pretty good!<br>
             </div>
@@ -50,21 +61,24 @@
     <button type="button" id="recordEntryButton">Thanks for sharing, bud.</button>
     <form>
         <fieldset>
-            <legend><h3>Filter by Mood</h3></legend>
+            <legend>
+                <h3>Filter by Mood</h3>
+            </legend>
             <div>
-            <input type="radio" name="filterMood" value="prettyGood">These were some good days!
+                <input type="radio" name="filterMood" value="prettyGood">These were some good days!
             </div>
             <div>
-            <input type="radio" name="filterMood" value="notSoBad">These days weren't too bad.
+                <input type="radio" name="filterMood" value="notSoBad">These days weren't too bad.
             </div>
             <div>
-            <input type="radio" name="filterMood" value="flustered">I was feeling pretty flustered here.
+                <input type="radio" name="filterMood" value="flustered">I was feeling pretty flustered here.
             </div>
             <div>
-            <input type="radio" name="filterMood" value="prettyDown">I was pretty down here.
+                <input type="radio" name="filterMood" value="prettyDown">I was pretty down here.
             </div>
             <div>
-            <input type="radio" name="filterMood" value="noneYa">It wasn't your business then and it isn't your business now!
+                <input type="radio" name="filterMood" value="noneYa">It wasn't your business then and it isn't your
+                business now!
             </div>
         </fieldset>
     </form>
