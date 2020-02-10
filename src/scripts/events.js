@@ -3,6 +3,18 @@ import journalRenderFunctions from "./entryComponent.js";
 import putJournalOnDOM from "./entriesDOM.js";
 
 const events = {
+  clearForm() {
+    const hiddenJournalId = document.querySelector("#journalId");
+    const recordEntryButton = document.querySelector("#recordEntryButton");
+    const journalDate = document.querySelector("#journalDate");
+    const conceptsCovered = document.querySelector("#conceptsCoveredBox");
+
+    hiddenJournalId.value = "";
+    recordEntryButton.value = "";
+    journalDate.value = "";
+    conceptsCovered.value = "";
+    journalContent.value = "";
+  },
   recordEntry() {
     const hiddenJournalId = document.querySelector("#journalId");
     const recordEntryButton = document.querySelector("#recordEntryButton");
@@ -28,10 +40,13 @@ const events = {
       );
 
       if (hiddenJournalId.value !== "") {
-        updateEntry(hiddenJournalId.value);
+        newJournalEntry.id = parseInt(hiddenJournalId.value)
+        API.updateEntry(newJournalEntry).then(()=> {
+          API.getJournalEntries().then(putJournalOnDOM).then(this.clearForm);
+        });
       } else {
         API.postNewEntry(newJournalEntry).then(() => {
-          API.getJournalEntries().then(putJournalOnDOM);
+          API.getJournalEntries().then(putJournalOnDOM).then(this.clearForm());
         });
       }
     });

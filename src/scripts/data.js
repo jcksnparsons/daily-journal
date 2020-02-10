@@ -12,7 +12,7 @@ const API = {
     });
   },
   updateEntry(entry) {
-    return fetch(`http://localhost:3000/entries.${entry.id}`, {
+    return fetch(`http://localhost:3000/entries/${entry.id}`, {
       method: "PUT",
       headers: {
           "Content-Type": "application/json"

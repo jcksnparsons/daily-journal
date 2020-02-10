@@ -13,6 +13,13 @@
       "journalContent": "Sadly, school has been cancelled for the day due to inclement weather. So, I get to hang out on my couch all day and code in the comfort of my sweats and slippers. Can't complain too much about that.",
       "moodForDay": "notSoBad",
       "id": 2
+    },
+    {
+      "journalDate": "2020-02-10",
+      "conceptsCovered": "More PUT functionality, object methods and CSS variables",
+      "journalContent": "Well, my edit function now works, but I honestly have no idea how it does and don't know if I ever well. I've heard people talk about the pit of despair here, and it definitely feels like I am there right now. I feel like a complete idiot and don't know what I'm doing here right now. Kill me now please.",
+      "moodForDay": "prettyDown",
+      "id": 3
     }
   ]
 }
