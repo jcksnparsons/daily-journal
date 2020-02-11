@@ -59,8 +59,8 @@
         </fieldset>
     </form>
     <button type="button" id="recordEntryButton">Thanks for sharing, bud.</button>
-    <form>
-        <fieldset>
+    <div id="filterAndSearch">
+        <fieldset class="filterBox">
             <legend>
                 <h3>Filter by Mood</h3>
             </legend>
@@ -81,7 +81,14 @@
                 business now!
             </div>
         </fieldset>
-    </form>
+        <fieldset class="searchBox">
+            <legend>
+                <h3>Search</h3>
+            </legend>
+            <input id="searchInput"></input>
+            <p>Press enter to search journal entries</p>
+        </fieldset>
+    </div>
     <article id="entryLog">
 
     </article>

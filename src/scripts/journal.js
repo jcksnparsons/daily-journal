@@ -7,4 +7,5 @@ API.getJournalEntries().then(putJournalOnDOM);
 events.recordEntry();
 events.filterByMood();
 events.editEntry();
+events.searchEntries();
 events.deleteEntry();
