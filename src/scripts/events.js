@@ -62,6 +62,27 @@ const events = {
       })
     );
   },
+  searchEntries() {
+    const journalSearch = document.getElementById("searchInput");
+    journalSearch.addEventListener("keyup", event => {
+      if (event.keyCode === 13) {
+        const searchTerm = event.target.value
+
+        API.getJournalEntries().then(arr => {
+          putJournalOnDOM(arr.filter(entry => {
+            const values = Object.values(entry);
+            for (const value of values) {
+              if (typeof value === "string") {
+                if (value.includes(searchTerm)) {
+                  return entry
+                }
+              }
+            }
+          }))
+        })
+      }
+    })
+  },
   editEntry() {
     const journalRecord = document.getElementById("entryLog");
     journalRecord.addEventListener("click", event => {
