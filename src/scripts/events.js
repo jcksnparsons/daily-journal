@@ -1,6 +1,6 @@
 import API from "./data.js";
 import journalRenderFunctions from "./entryComponent.js";
-import putJournalOnDOM from "./entriesDOM.js";
+import domFunctions from "./entriesDOM.js";
 
 const events = {
   clearForm() {
@@ -36,17 +36,21 @@ const events = {
         journalDate.value,
         conceptsCovered.value,
         journalContent.value,
-        moodChecker(moodForDay)
+        parseInt(moodChecker(moodForDay))
       );
 
       if (hiddenJournalId.value !== "") {
-        newJournalEntry.id = parseInt(hiddenJournalId.value)
-        API.updateEntry(newJournalEntry).then(()=> {
-          API.getJournalEntries().then(putJournalOnDOM).then(this.clearForm);
+        newJournalEntry.id = parseInt(hiddenJournalId.value);
+        API.updateEntry(newJournalEntry).then(() => {
+          API.getJournalEntries()
+            .then(domFunctions.putJournalOnDOM)
+            .then(this.clearForm());
         });
       } else {
         API.postNewEntry(newJournalEntry).then(() => {
-          API.getJournalEntries().then(putJournalOnDOM).then(this.clearForm());
+          API.getJournalEntries()
+            .then(domFunctions.putJournalOnDOM)
+            .then(this.clearForm());
         });
       }
     });
@@ -56,8 +60,10 @@ const events = {
     filterMoodButtons.forEach(filterMoodButton =>
       filterMoodButton.addEventListener("click", event => {
         const mood = event.target.value;
+        const parsedMood = parseInt(mood);
+
         API.getJournalEntries().then(arr => {
-          putJournalOnDOM(arr.filter(el => el.moodForDay === mood));
+          domFunctions.putJournalOnDOM(arr.filter(el => el.moodId === parsedMood));
         });
       })
     );
@@ -66,22 +72,24 @@ const events = {
     const journalSearch = document.getElementById("searchInput");
     journalSearch.addEventListener("keyup", event => {
       if (event.keyCode === 13) {
-        const searchTerm = event.target.value
+        let searchTerm = event.target.value;
 
         API.getJournalEntries().then(arr => {
-          putJournalOnDOM(arr.filter(entry => {
-            const values = Object.values(entry);
-            for (const value of values) {
-              if (typeof value === "string") {
-                if (value.includes(searchTerm)) {
-                  return entry
+          domFunctions.putJournalOnDOM(
+            arr.filter(entry => {
+              const values = Object.values(entry);
+              for (const value of values) {
+                if (typeof value === "string") {
+                  if (value.includes(searchTerm)) {
+                    return entry;
+                  }
                 }
               }
-            }
-          }))
-        })
+            })
+          );
+        });
       }
-    })
+    });
   },
   editEntry() {
     const journalRecord = document.getElementById("entryLog");
@@ -119,7 +127,7 @@ const events = {
 
         API.deleteEntry(entryToDelete)
           .then(API.getJournalEntries)
-          .then(putJournalOnDOM);
+          .then(domFunctions.putJournalOnDOM);
       }
     });
   }

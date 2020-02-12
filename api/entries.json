@@ -4,22 +4,49 @@
       "journalDate": "2020-02-05",
       "conceptsCovered": "Code refactoring and modularization",
       "journalContent": "Well, I managed to refactor my code for the journal so my main.js now consists of about 10 lines of code. To quote Ice Cube, \"today was a good day.\" I'm almost bummed that we have lab work the rest of the day, because I'm excited to learn new stuff!",
-      "moodForDay": "prettyGood",
+      "moodId": 1,
       "id": 1
     },
     {
       "journalDate": "2020-02-07",
       "conceptsCovered": "API PUT and edit functionality",
       "journalContent": "Sadly, school has been cancelled for the day due to inclement weather. So, I get to hang out on my couch all day and code in the comfort of my sweats and slippers. Can't complain too much about that.",
-      "moodForDay": "notSoBad",
+      "moodId": 2,
       "id": 2
     },
     {
-      "journalDate": "2020-02-10",
-      "conceptsCovered": "More PUT functionality, object methods and CSS variables",
-      "journalContent": "Well, my edit function now works, but I honestly have no idea how it does and don't know if I ever well. I've heard people talk about the pit of despair here, and it definitely feels like I am there right now. I feel like a complete idiot and don't know what I'm doing here right now.",
-      "moodForDay": "prettyDown",
-      "id": 3
+      "journalDate": "2020-02-12",
+      "conceptsCovered": "More data structure nonsense",
+      "journalContent": "My head feels like it is about to explode. Jack needs a beer, stat.",
+      "moodId": 3,
+      "id": 4
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "moodName": "prettyGood",
+      "moodDescribe": "You know, these was some pretty good days!"
+    },
+    {
+      "id": 2,
+      "moodName": "notSoBad",
+      "moodDescribe": "These days were not so bad."
+    },
+    {
+      "id": 3,
+      "moodName": "flustered",
+      "moodDescribe": "These days had me pretty flustered."
+    },
+    {
+      "id": 4,
+      "moodName": "prettyDown",
+      "moodDescribe": "To be honest, I was feeling pretty down these days."
+    },
+    {
+      "id": 5,
+      "moodName": "noneYa",
+      "moodDescribe": "It wasn't any of your business then and it's not any of your business now!"
     }
   ]
 }
